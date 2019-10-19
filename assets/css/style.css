@@ -96,10 +96,13 @@ li a:hover{
     height: auto;
     margin: 0 auto;
     background-color:  #ffffff;
+    -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
   }
  
   input,textarea{
-    width: 960px;
+    width: 900px;
     padding: 10px 0px;
     margin: 5px 0px;
   }
