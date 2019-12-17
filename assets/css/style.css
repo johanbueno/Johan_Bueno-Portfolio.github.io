@@ -57,7 +57,7 @@ text-align: center;
   background-color:#4aaaa5;
   color: white;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  margin-left: 320px;
+  /* margin-left: 320px; */
 }
  footer {
     position: fixed;
