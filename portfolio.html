@@ -22,15 +22,15 @@
     <title>Portfolio</title>
 </head>
 
-<body>
+<body style="background-image: url('./assets/images/background3.jpeg')">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        <button class="navbar-toggler" type="button" data-toggle="col-md-4lapse" data-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a id="me" class="navbar-brand" href="index.html">Johan Bueno</a>
 
-        <div class="collapse navbar-collapse navlist" id="navbarTogglerDemo03">
+        <div class="col-md-4lapse navbar-col-md-4lapse navlist" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item ">
                     <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
@@ -39,109 +39,296 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="portofolio.html">Portfolio</a>
+                    <a class="nav-link disabled" href="portfolio.html">Portfolio</a>
                 </li>
             </ul>
 
         </div>
     </nav>
+<br>
+<br>
+<br>
     <div class="container">
-        <div class="row">
-            <div class="col-md-1">
 
+        <h1 style="color: aliceblue;">Portfolio</h1>
+        <!-- Modal -->
+        <div class="row  portfolio">
+            <br>
+
+            <div class="col-md-4">
+                <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Eat-Da-Burger</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./assets/images/burger.png" class="card-img-top" alt="Eat-Da-Burger">
+                                <p>
+                                    Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd
+                                    like to eat.
+                                    Whenever a user submits a burger's name, your app will display the burger on the
+                                    left side of the page -- waiting to be devoured.
+                                    Each burger in the waiting area also has a Devour it! button. When the user clicks
+                                    it, the burger will move to the right side of the page.
+                                    Your app will store every burger in a database, whether devoured or not.
+
+                                </p>
+                                <hr>
+                                <h3>Technologies</h3>
+                                <p>
+
+                                    * MySQL
+                                    * Node
+                                    * Express
+                                    * MVC design
+                                    * Handlebars
+                                </p>
+                                ...
+                            </div>
+                            <div class="modal-footer">
+
+                                <button onclick="window.location.href = 'https://burgerjsb.herokuapp.com/';"
+                                    type="button" class="btn btn-primary">Live</button>
+                                <button onclick="window.location.href = 'https://github.com/johanbueno/Eat-Da-Burger';"
+                                    type="button" class="btn btn-primary">Check Repo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width:18rem; text-align: center;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Eat-Da-Burger</h5>
+                        <img src="./assets/images/burger.png" class="card-img-top" alt="Eat-Da-Burger">
+
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal1">
+                            Launch App
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-10 portfolio">
-                <h1>Portfolio</h1>
-                <hr>
-                
-                <br>
-                <div class="card" style="width: 28rem; text-align: center;margin: 0 auto;">
-                    <img src="./assets/images/Events.png" class="card-img-top" alt="Weather Dashboard">
+            <div class="col-md-4">
+                <div class="modal fade" id='modal-events' tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Hook Events</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./assets/images/Events.png" class="card-img-top" alt="Events Dashboard">
+
+
+                                <p>User can input city or keyword to get a list of upcoming events
+                                    Events are listed with details. User can then get more details.
+                                    User is able to get directions from current location to the venue or click to get
+                                    tickets to
+                                    the event.
+
+                                </p>
+                                <hr>
+                                <h3>Technologies</h3>
+                                <p>
+
+                                    * Ajax Call
+                                    * Google API
+                                    * Javascript
+                                    * Materialize
+                                </p>
+
+                                <h3>Google API</h3>
+                                <img style="width: 450px;" src="./assets/images/google-api.png" alt="google-maps">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+
+                                <button style="left: 0;"
+                                    onclick="window.location.href = 'https://johanbueno.github.io/project_done/';"
+                                    type="button" class="btn btn-primary">Live</button>
+                                <button onclick="window.location.href = 'https://github.com/johanbueno/project_done';"
+                                    type="button" class="btn btn-primary">Check Repo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width:18rem; text-align: center;">
+
                     <div class="card-body">
                         <h5 class="card-title">Hook Events</h5>
-                        <p class="card-text">User can input city or keyword to get a list of upcoming events
-                            Events are listed with details. User can then get more details.
-                            User is able to get directions from current location to the venue or click to get tickets to
-                            the event.</p>
-                        <a href="https://johanbueno.github.io/project_done/" class="btn btn-primary">Check it out</a>
-                        <a href="https://github.com/johanbueno/project_done" class="btn btn-success">See Repository</a>
+                        <img src="./assets/images/Events.png" class="card-img-top" alt="Weather Dashboard">
+
+                        <br>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-events">
+                            Launch App
+                        </button>
                     </div>
                 </div>
-                <br>
-                <br>
-                <div class="card" style="width: 28rem; text-align: center;margin: 0 auto;">
-                    <img src="./assets/images/Screen Shot 2019-12-11 at 9.32.49 PM (2).png" class="card-img-top"
-                        alt="Weather Dashboard">
+            </div>
+            <div class="col-md-4">
+                <div class="modal fade" id="Modalgiftify" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Giftify</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./assets/images/giftify/main-dashboard.png" class="card-img-top"
+                                    alt="Giftify">
+                                <br>
+                                <br>
+
+                                <h5>Looking for that perfect gift, but don't know where to start? Well we have the
+                                    perfect app for you!</h5>
+                                <p>
+                                    This application helps the user search for and buy the perfect gift for their
+                                    special someone. They can choose from a selection of Featured and Top Rated Gifts,
+                                    or they can search for a gift directly from the homepage.
+
+                                </p>
+                                <hr>
+
+
+
+                                <h3>Technologies</h3>
+                                <p>
+                                    * MySQL
+                                    * Sequelize
+                                    * Passport.js Authenticate
+                                    * Node
+                                    * Express
+                                    * MVC design
+                                    * Handlebars
+                                    * Etsy API
+                                    * Algolia
+                                </p>
+                                <img class="card-img-top" src="./assets/images/giftify/Sign-up.png" alt="Sign-up">
+                                <hr>
+                                <img class="card-img-top" src="./assets/images/giftify/tshirt.png" alt="tshirt">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+
+                                <button onclick="window.location.href = 'https://giftify-project2.herokuapp.com/';"
+                                    type="button" class="btn btn-primary">Live</button>
+                                <button onclick="window.location.href = 'https://github.com/cmarshman/Giftify';"
+                                    type="button" class="btn btn-primary">Check Repo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width:18rem; text-align: center;">
+
                     <div class="card-body">
-                        <h5 class="card-title">Weather Dashboard</h5>
-                        <p class="card-text">Weather Dashboard build with jQuery 3.2.1.User could search current weather
-                            conditions for multiple cities. The App is correlated with current time and display the next
-                            day forecast.</p>
-                        <a href="https://johanbueno.github.io/Weather_Dashboard/" class="btn btn-primary">Check it
-                            out</a>
-                        <a href="https://github.com/johanbueno/Weather_Dashboard" class="btn btn-success">See
-                            Repository</a>
+                        <h5 class="card-title">Giftify</h5>
+                        <img src="./assets/images/giftify/main-dashboard.png" class="card-img-top" alt="Giftify">
+
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modalgiftify">
+                            Launch App
+                        </button>
                     </div>
                 </div>
-               
-                <br>
-                <br>
-                <div class="card" style="width: 28rem; text-align: center;margin: 0 auto;">
-                    <img src="./assets/images/PASSWORD.png" class="card-img-top" alt="Weather Dashboard">
-                    <div class="card-body">
-                        <h5 class="card-title">Password Generator</h5>
-                        <p class="card-text">Password Generator. The user could choose from Special Characters, Numeric,
-                            UpperCase and LowerCase in a range from 8 to 128 Characters.</p>
-                        <a href="https://johanbueno.github.io/Password_generator/" class="btn btn-primary">Check it
-                            out</a>
-                        <a href="https://github.com/johanbueno/Password_generator" class="btn btn-success">See
-                            Repository</a>
-                    </div>
-                </div>
-                <div class="row" hidden>
-                    <div class="col-md-6 ">
-                        <div class="angular">
-                            <div class="insidebox">Angular</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="game">
-                            <div class="insidebox">Game</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" hidden>
-                    <div class="col-md-6">
-                        <div class="html_responsive">
-                            <div class="insidebox">Rensponsive </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="javascript ">
-                            <div class="insidebox">Javascript</div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
             </div>
 
         </div>
-        <div class="col-md-1">
 
+        <div class="row  portfolio">
+
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                
+            </div>
         </div>
+
+        <!-- <!-- <div class="card" style="width:18rem; text-align: center;margin: 0 auto;"> -->
+            <img src="./assets/images/Screen Shot 2019-12-11 at 9.32.49 PM (2).png" class="card-img-top"
+                alt="Weather Dashboard">
+            <div class="card-body">
+                <h5 class="card-title">Weather Dashboard</h5>
+                <p class="card-text">Weather Dashboard build with jQuery 3.2.1.User could search current weather
+                    conditions for multiple cities. The App is correlated with current time and display the next
+                    day forecast.</p>
+                <a href="https://johanbueno.github.io/Weather_Dashboard/" class="btn btn-primary">Check it
+                    out</a>
+                <a href="https://github.com/johanbueno/Weather_Dashboard" class="btn btn-success">See
+                    Repository</a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="card" style="width:18rem; text-align: center;margin: 0 auto;">
+            <img src="./assets/images/PASSWORD.png" class="card-img-top" alt="Weather Dashboard">
+            <div class="card-body">
+                <h5 class="card-title">Password Generator</h5>
+                <p class="card-text">Password Generator. The user could choose from Special Characters, Numeric,
+                    UpperCase and LowerCase in a range from 8 to 128 Characters.</p>
+                <a href="https://johanbueno.github.io/Password_generator/" class="btn btn-primary">Check it
+                    out</a>
+                <a href="https://github.com/johanbueno/Password_generator" class="btn btn-success">See
+                    Repository</a>
+            </div>
+        </div>
+        <div class="row" hidden>
+            <div class="col-md-4-md-6 ">
+                <div class="angular">
+                    <div class="insidebox">Angular</div>
+                </div>
+            </div>
+            <div class="col-md-4-md-6">
+                <div class="game">
+                    <div class="insidebox">Game</div>
+                </div>
+            </div>
+        </div>
+        <div class="row" hidden>
+            <div class="col-md-4-md-6">
+                <div class="html_responsive">
+                    <div class="insidebox">Rensponsive </div>
+                </div>
+            </div>
+            <div class="col-md-4-md-6">
+                <div class="javascript ">
+                    <div class="insidebox">Javascript</div>
+                </div>
+            </div>
+
+        </div> -->
 
     </div>
 
 
-
-
     <footer>
-        <h6>Johan Bueno © 2019 </h6>
+        <h6>Johan Bueno © 2020 </h6>
     </footer>
 
 </body>
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+</script>
 
 </html>
