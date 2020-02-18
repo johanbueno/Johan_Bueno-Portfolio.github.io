@@ -48,6 +48,9 @@
 }
 .contact {
 text-align: center;
+background-color: rgb(240, 239, 239);
+width: 100%;
+padding: 20px;
 }
 .msmbx{
   position: relative;
@@ -63,18 +66,35 @@ text-align: center;
 
   background-color: rgb(240, 239, 239);
   position: relative;
-  float: left;
   font-family: 'Times New Roman', Times, serif;
-  margin-top: 60px;
+  margin: 80px;
   width: 100%;
   margin-bottom: 100px;
   padding-bottom: 30px;
   padding-top: 30px;
+  padding-left: 30px;
   height: auto;
 
 }
- 
+.card-body{
+  height: 292px;
+  padding: 5px;
+  margin: 5px;
+}
 
+.repos{
+
+  margin: 10px;
+}
+ 
+.btn-primary-repos{
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 10px;
+  left: 90px;
+
+}
 #me {
   background-color:#4aaaa5;
   color: white;
