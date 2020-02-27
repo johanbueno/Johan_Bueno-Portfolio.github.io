@@ -5,18 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+  
   <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1d3ebef0ab.js" crossorigin="anonymous"></script>
 
@@ -24,58 +17,53 @@
 </head>
 
 <body>
-  <!-- navigation bar goes here  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a id="me" class="navbar-brand" href="index.html">Johan Bueno</a>
-
-    <div class="collapse navbar-collapse navlist" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-      </ul>
-
+  <div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <!-- End #mobile-menu-toggle -->
+  <header>
+    <div id="mobile-menu-close">
+      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
     </div>
-  </nav>
-  <br>
-  <!-- 3 columns using boostrap -->
+    <ul id="menu" class="shadow">
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="portfolio.html">Projects</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <!-- End header -->
 
-  <div class="jumbotrom  main_profile">
-    
-    <div class="col-sm-12">
+  <div id="lead">
+    <div id="lead-content">
+      <h1 style="font-size:xx-large;">Johan Bueno</h1>
       <img id="Johan" src="./assets/images/JOHAN-BUENO_copy.jpg" alt="Me">
+      <h2>Full Stack Developer</h2>
+      <a href="https://docs.google.com/document/d/1FMf7T5so_sac4FqvwdbPdpkXCgfbQ_DDcNWX3oh4fcg/edit?usp=sharing"
+        class="btn-rounded-white">Download Resume</a>
     </div>
-    <div class="col-sm-12">
-      <h3>Johan Bueno</h3>
-    </div>
-    <div class="col-sm-12">
-      <h6> Full Stack Web Developer</h6>
-      <br>
-    </div>
-    <hr>
-    <div class="col-sm-12">
-      <i class="fab fa-linkedin">
-        <a href="https://www.linkedin.com/in/johan-bueno-3a180496/">Linkedin</a>
-      </i>
-      <i class="fab fa-github">
-        <a href="https://github.com/johanbueno">Github</a>
-      </i>
+    <!-- End #lead-content -->
 
-
-    </div>
-
-
+   
+    <div id="lead-down">
+      <span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </span>
   </div>
 
-  <div class="container">
+  </div>
+  <br>
+ 
+
+  <div style="margin-bottom: 150px;" class="container ">
     <div class="row">
       <div class="col-md-1">
       </div>
@@ -85,7 +73,7 @@
 
             <hr>
 
-            <div>
+            <div id="about">
               <p>Full Stack Web Developer with a Bachelor’s degree in Finance and Foreign exchange. Assistant Warehouse
                 Manager of a Distribution center. Efficient on time management and conflict resolution to develop
                 responsive web applications. Looking for accountability on every single project. Known among staff for
@@ -108,17 +96,55 @@
             <img src="./assets/images/MySQL.png" alt="MySQL">
           </div>
         </div>
+        <div id="skills">
+          <h2 class="heading">Skills</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>Github</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>API</li>
+            <li>MySQL</li>
+            <li>Mongo</li>
+            <li>Css</li>
+            <li>Bootstrap</li>
+
+          </ul>
+        </div>
 
       </div>
 
       <div class="col-md-1"></div>
     </div>
+    <div style="text-align: center;" id="to-top">
+      <span>
+        <i class="fas fa-arrow-circle-up"></i>
+    </span>  
+    </div>
+
+    
   </div>
   <br>
   <br>
   <br>
-
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+        $('#lead-down span').click(function() {
+        var scrollDistance = $('#lead').next().offset().top;
+        $('html, body').animate({
+            scrollTop: scrollDistance + 'px'
+        }, 500);
+    });
+    $('#to-top').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
+  </script>
 </body>
 <footer>
   <h6>Johan Bueno © 2020 </h6>

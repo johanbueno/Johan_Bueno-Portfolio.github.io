@@ -15,35 +15,32 @@
   <title>Contact</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a id="me" class="navbar-brand" href="index.html">Johan Bueno</a>
-
-    <div class="collapse navbar-collapse navlist" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item ">
-                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="portfolio.html">Portfolio</a>
-            </li>
-        </ul>
-
+<body style="background-image: url('./assets/images/background3.jpeg')">
+  <header>
+    <div id="mobile-menu-close">
+      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
     </div>
-</nav>
+    <ul id="menu" class="shadow">
+      <li>
+        <a href="index.html">About</a>
+      </li>
+      <li>
+        <a href="portfolio.html">Projects</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <br>
+  <br>
+  <br>
   <br>
   <!-- contact me -->
   <div class="container">
       <div class="row">
        
-        <div class="col-md-12 contact">
+        <div class="col-md-12 contact ">
           <img id="Johan" src="./assets/images/JOHAN-BUENO_copy.jpg" alt="ProfilePicture">
           <h1>Contact</h1>
           <hr>
@@ -58,6 +55,16 @@
               <i class="far fa-file"> 
                 <a href="https://docs.google.com/document/d/1FMf7T5so_sac4FqvwdbPdpkXCgfbQ_DDcNWX3oh4fcg/edit?usp=sharing">Resume</a>
               </i>
+          </div>
+          <div class="col-sm-12">
+            <i class="fab fa-linkedin">
+              <a href="https://www.linkedin.com/in/johan-bueno-3a180496/">Linkedin</a>
+            </i>
+            <i class="fab fa-github">
+              <a href="https://github.com/johanbueno">Github</a>
+            </i>
+      
+      
           </div>
   
         </div>
@@ -76,7 +83,7 @@
           <input type="text" class="form-control"  name="mail"><br>
           Comment:<br>
           <input type="text" class="msmbx" name="comment" size="50">
-          <input class="btn btn-primary" type="submit" value="Send" style="position: relative;margin-bottom: 100px;">
+          <input class="btn btn-primary  btnsend" type="submit" value="Send" style="position: relative;margin-bottom: 100px;">
           </form>
       </div>
       <div class="col-md-3"></div>
