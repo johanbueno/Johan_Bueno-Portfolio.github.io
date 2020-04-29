@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -45,7 +46,7 @@
   <div id="lead">
     <div id="lead-content">
       <h1 style="font-size:xx-large;">Johan Bueno</h1>
-      <img id="Johan" src="./assets/images/JOHAN-BUENO_copy.jpg" alt="Me">
+      <img id="Johan" src="./assets/images/JOHAN-BUENO_copy.jpg" alt="Johan-Bueno">
       <h2>Full Stack Developer</h2>
       <a href="https://docs.google.com/document/d/1kneCToLGQKgo7vrpij5o6g_beqGLtvgf94n0cTnD1-w/edit?usp=sharing"
         class="btn-rounded-white">Download Resume</a>
@@ -113,16 +114,16 @@
 
           </ul>
         </div>
-
+        <div style="text-align: center;" id="lead-top">
+          <span>
+            <i class="fas fa-arrow-circle-up"></i>
+        </span>  
+        </div>
       </div>
 
       <div class="col-md-1"></div>
     </div>
-    <div style="text-align: center;" id="to-top">
-      <span>
-        <i class="fas fa-arrow-circle-up"></i>
-    </span>  
-    </div>
+    
 
     
   </div>
@@ -137,7 +138,7 @@
             scrollTop: scrollDistance + 'px'
         }, 500);
     });
-    $('#to-top').click(function() {
+    $('#lead-top span').click(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 500);
