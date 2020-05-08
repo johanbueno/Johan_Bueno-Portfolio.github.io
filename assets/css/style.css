@@ -1,5 +1,5 @@
  body {
-  background-image: url("../images/gravel.png");
+  background-image: url("../images/triangle-mosaic.webp");
 
      margin:0 auto;
      font-family: 'Open Sans', sans-serif;
@@ -8,12 +8,8 @@
 h1,h2  {
   font-family: 'Pacifico', cursive;
 }
-
-
-
   li a:hover{
     background-color:#4aaaa5;
-
 }
 #Johan {
   position: relative;
@@ -24,7 +20,6 @@ h1,h2  {
   border-radius: 50% ;
 
 }
-
 
 .main_profile a{
   margin-top: 5px;
